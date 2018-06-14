@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="plus_margin">16dp</dimen>
+    <dimen name="inventory_margin">16dp</dimen>
+    <dimen name="generalmargin">5dp</dimen>
+    <dimen name="plusminus">8dp</dimen>
+    <dimen name="list_item_margin">16dp</dimen>
+    <dimen name="list_marginRight_TV">10dp</dimen>
+    <dimen name="list_marginLeft">5dp</dimen>
+</resources>

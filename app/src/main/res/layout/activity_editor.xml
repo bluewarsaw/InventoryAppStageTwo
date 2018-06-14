@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    tools:context=".EditorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/product_editor"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_margin="@dimen/generalmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/addStyle"
+            android:text="@string/product_name" />
+
+        <RelativeLayout
+            android:layout_margin="@dimen/generalmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/product_name_ET"
+                style="@style/addFormStyle"
+                android:hint="@string/product_name"
+                android:inputType="textCapWords" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/generalmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/addStyle"
+            android:text="@string/product_price" />
+
+        <RelativeLayout
+            android:layout_margin="@dimen/generalmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/product_price_ET"
+                style="@style/addFormStyle"
+                android:hint="@string/product_price"
+                android:inputType="number" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/generalmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/addStyle"
+            android:text="@string/product_quantity" />
+
+        <RelativeLayout
+            android:layout_margin="@dimen/generalmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/product_quantity_ET"
+                style="@style/addFormStyle"
+                android:hint="@string/product_quantity"
+                android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/generalmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/addStyle"
+            android:text="@string/product_supplier_name" />
+
+        <Spinner
+            android:id="@+id/supplier_name_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingRight="16dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/generalmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/addStyle"
+            android:text="@string/product_supplier_phone" />
+
+        <RelativeLayout
+            android:layout_margin="@dimen/generalmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/supplier_phone_ET"
+                style="@style/addFormStyle"
+                android:hint="@string/product_supplier_phone"
+                android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

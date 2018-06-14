@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/list_item_margin">
+
+    <LinearLayout
+        android:layout_margin="@dimen/generalmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/generalmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_name_TV"
+                style="@style/titleListStyle"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/list_marginRight_TV"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                tools:text="product name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/generalmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/generalmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="@dimen/generalmargin"
+                android:orientation="vertical"
+                style="@style/listDetailsStyle">
+
+                <TextView
+                    android:id="@+id/product_price_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="product price" />
+
+                <TextView
+                    android:id="@+id/product_quantity_TV"
+                    style="@style/titleListStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="product quantity" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/generalmargin"
+                android:layout_height="@dimen/generalmargin"/>
+
+            <View
+                android:layout_width="@dimen/generalmargin"
+                android:layout_height="@dimen/generalmargin"/>
+
+            <View
+                android:layout_width="@dimen/generalmargin"
+                android:layout_height="@dimen/generalmargin"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/generalmargin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/sale_button"
+                            style="@style/listButtonStyle"
+                            android:drawableLeft="@drawable/ic_action_minus"
+                            android:text="Sale" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/generalmargin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/list_marginLeft">
+
+                        <Button
+                            android:paddingLeft="@dimen/generalmargin"
+                            android:id="@+id/edit_button"
+                            style="@style/listButtonStyle"
+                            android:drawableLeft="@drawable/ic_edit"
+                            android:text="Edit" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_supplier_spinner">
+        <item>@string/supplier_unknown</item>
+        <item>@string/supplier_amazon</item>
+        <item>@string/supplier_allegro</item>
+        <item>@string/supplier_ebay</item>
+    </string-array>
+</resources>
